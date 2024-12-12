@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBSSILENCE - $BE50</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Canvas for Stars -->
+    <canvas id="starCanvas"></canvas>
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="hero-content">
+            <h1 class="hero-title">$BE50</h1>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-content">
+            <h2 class="section-title">About OBSSILENCE</h2>
+            <p class="section-description">OBSSILENCE is a meme coin inspired by silence and meme culture. Join the fun!</p>
+        </div>
+    </section>
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Canvas for Stars */
+#starCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Header Section */
+#header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff9900;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#about .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ff9900;
+}
+
+#about .section-description {
+    font-size: 1.2rem;
+}
+
+/* Roadmap Section */
+#roadmap {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#roadmap ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#roadmap li {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+/* Footer Section */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
